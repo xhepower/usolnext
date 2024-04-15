@@ -1,0 +1,82 @@
+:root {
+  --gris-oscuro: #333;
+  --gris-medio: #666;
+  --gris-claro: #ccc;
+  --blanco: #fff;
+  --naranja: #ff5733;
+  --naranja-claro: #ffa07a;
+  --naranja-oscuro: #e64d00;
+}
+* {
+  min-width: 0;
+  font: inherit;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-height: 100dvh;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  min-height: 100vh;
+  margin: 0;
+}
+header {
+  display: flex;
+
+  width: 100%;
+}
+footer {
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+  text-align: right;
+}
+img,
+video,
+svg {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+  display: inline;
+}
+h1 {
+  color: var(--naranja-claro);
+}
+.card {
+  display: flex;
+}
+.input-number {
+  text-align: right;
+}
+
+.boton-card {
+  border-radius: 10px;
+  cursor: pointer;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: transparent;
+}
+.boton-ver {
+  background-image: url("/iconos/ojo.ico");
+}
