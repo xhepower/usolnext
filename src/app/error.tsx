@@ -1,5 +1,7 @@
 "use client";
 
+import { errorPageProps } from "../../types";
+
 export default function GlobalError({ error, reset }: errorPageProps) {
   return (
     <div>

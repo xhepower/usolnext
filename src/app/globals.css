@@ -18,14 +18,12 @@
 }
 body {
   margin: 0;
-  min-height: 100dvh;
-  width: 320px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-content: center;
-
+  max-width: 320px;
   min-height: 100vh;
-  margin: 0;
 }
 header {
   display: flex;
@@ -37,6 +35,15 @@ footer {
   position: fixed;
   bottom: 0px;
   text-align: right;
+  width: 100%;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 img,
 video,

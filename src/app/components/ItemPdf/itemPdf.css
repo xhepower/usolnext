@@ -1,0 +1,17 @@
+.itemPdf {
+  width: 100%;
+  display: flex;
+  margin-top: 3px;
+  padding: 5px;
+}
+.img-container {
+  width: 30%;
+}
+.info-container {
+  width: 65%;
+  white-space: pre-line;
+  padding: 3px;
+}
+.buttons-container {
+  width: 5%;
+}
