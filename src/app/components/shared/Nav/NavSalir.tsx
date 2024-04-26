@@ -4,7 +4,7 @@ import { borrarToken } from "app/app/utils/token";
 
 export default function NavSalir() {
   return (
-    <div>
+    <div className="nav-salir">
       <button
         className="boton-nav  boton-salir"
         onClick={async () => {

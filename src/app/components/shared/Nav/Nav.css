@@ -1,19 +1,17 @@
-.banner {
-  background-color: var(
-    --naranja-claro
-  ); /* Puedes cambiar este color a tu preferencia */
-  padding: 15px;
-  position: fixed;
-
-  left: 0;
+.header-dentro {
   width: 100%;
-  text-align: left;
-  max-width: 320px;
 }
-
-.titulo-banner {
-  color: white; /* Color del texto, puedes cambiarlo */
-  margin: 0;
-  text-align: end;
-  text-shadow: black;
+nav {
+  display: flex;
+  width: 95%;
+  justify-content: end;
+  padding: 5px;
+}
+.info-user {
+  white-space: pre-line;
+  padding: 5px;
+  text-align: right;
+}
+.nav-salir {
+  padding: 5px;
 }

@@ -11,6 +11,7 @@ import ItemPdf from "../components/ItemPdf/ItemPdf";
 import BuscaPdf from "../components/BuscaPdfs/BuscaPdf";
 
 import "./home.css";
+import InfiniteScroll from "react-infinite-scroller";
 
 // <{
 //   role: any;
@@ -19,10 +20,12 @@ import "./home.css";
 // } | null>
 export default function Home() {
   const [datos, setDatos] = useState<Pdf[] | null>([]);
+  const [initialData, setInitialData] = useState<Pdf[] | null>([]);
   useEffect(() => {
     const obtenerDatos = async () => {
       try {
         const response = await getAllPdfs();
+        setInitialData(response);
         setDatos(response);
       } catch (error) {
         console.error(error);
@@ -33,7 +36,7 @@ export default function Home() {
 
   return (
     <section className="container">
-      <BuscaPdf></BuscaPdf>
+      <BuscaPdf initialData={initialData} setDatos={setDatos}></BuscaPdf>
       {datos?.map((dato) => {
         return <ItemPdf key={`dato-${dato.nombrePDF}`} dato={dato} />;
       })}

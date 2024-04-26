@@ -1,17 +1,26 @@
 .itemPdf {
-  width: 100%;
+  width: 98%;
   display: flex;
-  margin-top: 3px;
-  padding: 5px;
+  margin-top: 16px;
+  padding: 2px;
 }
 .img-container {
   width: 30%;
+  padding: 2px;
 }
 .info-container {
-  width: 65%;
+  width: 60%;
+  display: flex;
   white-space: pre-line;
   padding: 3px;
+  padding: 2px;
+  align-items: center;
+  justify-items: center;
 }
 .buttons-container {
-  width: 5%;
+  display: flex;
+  width: 10%;
+  padding: 2px;
+  align-items: center;
+  justify-items: center;
 }

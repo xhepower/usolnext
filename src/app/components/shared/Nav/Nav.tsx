@@ -1,6 +1,6 @@
 import { datosToken } from "app/app/utils/token";
 import NavSalir from "./NavSalir";
-
+import "./Nav.css";
 interface navProps {
   token: string | null;
 }
@@ -10,14 +10,12 @@ export async function Nav(props: navProps) {
   const role = pay?.role;
   const sub = pay?.sub;
   const email = pay?.email;
-
+  const texto = `${email}
+  ${role}`;
   return (
-    <header>
+    <header className="header-dentro">
       <nav>
-        <div>
-          <p>{email}</p>
-          <p>{role}</p>
-        </div>
+        <div className="info-user">{texto}</div>
         <NavSalir></NavSalir>
       </nav>
     </header>

@@ -9,5 +9,6 @@ export const urls = {
     pdfs: `${env.backendHostname}/pdfs`,
     photos: `${env.backendHostname}/pdfs/photos`,
     barcodes: `${env.backendHostname}/pdfs/barcodes`,
+    docs: `${env.backendHostname}/pdfs/docs`,
   },
 };
