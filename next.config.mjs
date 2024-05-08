@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["localhost"], // Agrega 'localhost' como dominio permitido para las imágenes
+    domains: ["localhost", "http://64.23.214.163:3008"], // Agrega 'localhost' como dominio permitido para las imágenes
   },
 };
 
