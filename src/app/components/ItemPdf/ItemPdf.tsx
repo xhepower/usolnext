@@ -39,7 +39,8 @@ function ItemPdf(props: IDato) {
   Identidad: ${idNumber}
   Pasaporte: ${passport}`;
   const abrirPDF = () => {
-    const urlPDF = `${urls.app.docs}/${nombrePDF}`; // Reemplaza esto con la URL de tu PDF
+    const urlPDF = `${urls.app.docs}/${nombrePDF}`;
+    console.log(urlPDF); // Reemplaza esto con la URL de tu PDF
     window.open(urlPDF, "_blank");
   };
   return (
