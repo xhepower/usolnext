@@ -3,10 +3,10 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        hostname: "swiperjs.com",
+        hostname: "localhost",
       },
       {
-        hostname: "http://64.23.214.163:3008",
+        hostname: "64.23.214.163",
       },
     ],
   },
